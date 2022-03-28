@@ -1,0 +1,132 @@
+body {
+    background-color: black;
+  }
+  
+  #eye {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 100% 0;
+    border-width: 10px;
+    width: 50%;
+    height: 50%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: rotate(20deg);
+  }
+  
+  #retina {
+    border: 3px solid white;
+    border-radius: 100%;
+    transform: rotate(-20deg);
+    width: 15vw;
+    height: 30vh;
+  }
+  
+  p#title {
+    font-size: 30px;
+    color: white;
+    margin-top: 25%;
+    text-align: center;
+  }
+
+  #arrow-up {
+    margin-left: 48%;
+    margin-top: 5%;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    padding: 3px;
+    height: 100px;
+    width: 100px;
+    animation: up-down-motion1 2s linear both infinite alternate;
+  }
+
+  #arrow-left {
+    margin-left: 5%;
+    margin-top: 10%;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    padding: 3px;
+    height: 100px;
+    width: 100px;
+    animation: back-forth-motion1 2s linear both infinite alternate;
+  }
+
+  #arrow-right {
+    margin-left: 85%;
+    margin-top: -6%;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    padding: 3px;
+    height: 100px;
+    width: 100px;
+    animation: back-forth-motion2 2s linear both infinite alternate;
+  }
+  
+  #arrow-up:hover, #arrow-left:hover, #arrow-right:hover {
+    border-width: 0 20px 20px 0;
+  }
+
+  @keyframes up-down-motion1{
+    from{transform: translateY(20px) rotate(-135deg);}
+    to{transform: translateY(40px) rotate(-135deg);}
+  }
+
+  @keyframes back-forth-motion1{
+    from{transform: translateX(20px) rotate(135deg);}
+    to{transform: translateX(40px) rotate(135deg);}
+  }
+  
+  @keyframes back-forth-motion2{
+    from{transform: translateX(20px) rotate(-45deg);}
+    to{transform: translateX(40px) rotate(-45deg);}
+  }
+
+  #public {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    line-height: 15%;
+    animation: up-down-motion2 4s linear infinite;
+    animation-direction: normal;
+  }
+  
+  #public:hover, #mass:hover {
+    font-size: 30px;
+  }
+
+  @keyframes up-down-motion2{
+    from{transform: translateY(0px);}
+    to{transform: translateY(650px);}
+  }
+  
+  #mass {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    line-height: 15%;
+    animation: up-down-motion3 4s linear infinite;
+    animation-direction: normal;
+  }
+  
+  @keyframes up-down-motion3{
+    from{transform: translateY(650px);}
+    to{transform: translateY(0px);}
+  }
+
+  a {
+      color: white;
+      font-size: 16px;
+  }
