@@ -1,10 +1,12 @@
 body {
     background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
 h1 {
     color: white;
     text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #maps {
@@ -35,10 +37,11 @@ h1 {
   }
   
   p#title {
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     margin-top: 25%;
     text-align: center;
+    align-items: center;
   }
 
   #arrow-up {
@@ -103,7 +106,7 @@ h1 {
     top: 10%;
     left: 20%;
     line-height: 15%;
-    animation: up-down-motion2 4s linear infinite;
+    animation: up-down-motion2 6s linear infinite;
     animation-direction: normal;
   }
   
@@ -112,7 +115,7 @@ h1 {
   }
 
   @keyframes up-down-motion2{
-    from{transform: translateY(0px);}
+    from{transform: translateY(-600px);}
     to{transform: translateY(650px);}
   }
   
@@ -126,13 +129,56 @@ h1 {
     top: 10%;
     right: 20%;
     line-height: 15%;
-    animation: up-down-motion3 4s linear infinite;
+    animation: up-down-motion3 6s linear infinite;
     animation-direction: normal;
   }
   
   @keyframes up-down-motion3{
     from{transform: translateY(650px);}
-    to{transform: translateY(0px);}
+    to{transform: translateY(-600px);}
+  }
+
+  #hands {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+  }
+
+  #jail {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+
+  #massage {
+    font-size: 100px;
+    color: white;
+    font-weight: 900;
+    margin-top: 25%;
+    color: white;
+    margin-top: 25%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    left: 51%;
+    padding-top: 50px;
+    word-spacing: 50px;
+  }
+
+  #links {
+    position: absolute;
   }
 
   a {
