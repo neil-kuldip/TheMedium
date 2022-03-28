@@ -6,6 +6,11 @@ h1 {
     color: white;
     text-align: center;
 }
+
+#maps {
+    text-align: center;
+}
+
   #eye {
     display: flex;
     align-items: center;
