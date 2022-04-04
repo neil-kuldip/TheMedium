@@ -185,3 +185,12 @@ h1 {
     color: white;
     font-size: 16px;
   }
+
+  #home_links {
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
